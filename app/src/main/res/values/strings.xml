@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Social Media</string>
+    <string name="enter_pwd">Enter Password</string>
+    <string name="enter_id">Enter User ID</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="create_user">Don\'t have account? Create One</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="create">Create Account</string>
+    <string name="welcome_login">Hello Again ! <br></br> Welcome <br></br> back</string>
+    <string name="welcome_signup">Hello! <br></br> Signup to <br></br> get started</string>
+</resources>
