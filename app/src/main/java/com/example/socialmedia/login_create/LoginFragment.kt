@@ -36,12 +36,21 @@ class LoginFragment : LoginUtils() {
 
     private fun setClickListeners() {
         binding.createUser.setOnClickListener {
-            binding.createUser.visibility = View.GONE
-            binding.loginBtn.apply {
-                text = getString(R.string.create)
-                setTextColor(resources.getColor(R.color.white, null))
+            if(binding.createUser.text.toString() == getString(R.string.create_user)) {
+                binding.createUser.text = getString(R.string.already_user)
+                binding.loginBtn.apply {
+                    text = getString(R.string.create)
+                    setTextColor(resources.getColor(R.color.white, null))
+                }
+                binding.textView.text = getString(R.string.welcome_signup)
+            } else {
+                binding.createUser.text = getString(R.string.create_user)
+                binding.loginBtn.apply {
+                    text = getString(R.string.login)
+                    setTextColor(resources.getColor(R.color.white, null))
+                }
+                binding.textView.text = getString(R.string.welcome_login)
             }
-            binding.textView.text = getString(R.string.welcome_signup)
         }
     }
 
