@@ -33,61 +33,56 @@
             />
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_margin="16dp"
-            app:cardElevation="5dp"
-            app:cardCornerRadius="8dp"
-            android:padding="16dp"
-            android:id="@+id/id">
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_id"
+                android:id="@+id/id"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="16dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:elevation="5dp"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/id_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={viewmodel.id}"/>
+                    android:text="@={viewmodel.id}"
+                    android:inputType="textEmailAddress"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/id"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_margin="16dp"
-            app:cardElevation="5dp"
-            app:cardCornerRadius="8dp"
-            android:id="@+id/pwd">
-
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_pwd"
             app:passwordToggleEnabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:elevation="5dp"
             >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pwd_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:text="@={viewmodel.pwd}"/>
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView

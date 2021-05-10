@@ -36,6 +36,11 @@ class LoginFragment : LoginUtils() {
 
     private fun setClickListeners() {
         binding.createUser.setOnClickListener {
+            binding.idEt.apply {
+                setText("")
+                requestFocus()
+            }
+            binding.pwdEt.setText("")
             if(binding.createUser.text.toString() == getString(R.string.create_user)) {
                 binding.createUser.text = getString(R.string.already_user)
                 binding.loginBtn.apply {
