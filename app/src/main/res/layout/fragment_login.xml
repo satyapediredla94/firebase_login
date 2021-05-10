@@ -53,6 +53,7 @@
                     android:id="@+id/id_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
                     android:text="@={viewmodel.id}"
                     android:inputType="textEmailAddress"/>
 
@@ -80,6 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:imeOptions="actionDone"
                 android:text="@={viewmodel.pwd}"/>
 
         </com.google.android.material.textfield.TextInputLayout>
