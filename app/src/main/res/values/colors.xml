@@ -10,4 +10,5 @@
     <color name="light_pink">#F1F1F6</color>
     <color name="dark_blue">#041337</color>
     <color name="light_blue">#BAC5DA</color>
+    <color name="hint_blue">#727D93</color>
 </resources>

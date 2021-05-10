@@ -47,6 +47,10 @@
                 app:boxCornerRadiusTopEnd="8dp"
                 app:boxCornerRadiusTopStart="8dp"
                 android:elevation="5dp"
+                app:boxStrokeColor="@color/dark_blue"
+                app:boxStrokeWidth="1dp"
+                android:textColorHint="@color/hint_blue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -54,6 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:imeOptions="actionNext"
+                    android:textColor="@color/dark_blue"
                     android:text="@={viewmodel.id}"
                     android:inputType="textEmailAddress"/>
 
@@ -64,7 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_pwd"
+            android:textColorHint="@color/hint_blue"
             app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/hint_blue"
             app:layout_constraintTop_toBottomOf="@+id/id"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -74,6 +81,8 @@
             app:boxCornerRadiusTopEnd="8dp"
             app:boxCornerRadiusTopStart="8dp"
             android:elevation="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/dark_blue"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -82,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:imeOptions="actionDone"
+                android:textColor="@color/dark_blue"
                 android:text="@={viewmodel.pwd}"/>
 
         </com.google.android.material.textfield.TextInputLayout>
