@@ -9,7 +9,7 @@
     <string name="alert">Alert</string>
     <string name="ok">OK</string>
     <string name="create">Create Account</string>
-    <string name="welcome_login">Hello Again ! <br></br> Welcome <br></br> back</string>
-    <string name="welcome_signup">Hello! <br></br> Signup to <br></br> get started</string>
+    <string name="welcome_login">Hello Again ! \nWelcome \nback</string>
+    <string name="welcome_signup">Hello! \nSignup to \nget started</string>
     <string name="already_user">Already a User? Sign In</string>
 </resources>
